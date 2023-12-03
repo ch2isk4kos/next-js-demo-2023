@@ -9,7 +9,8 @@ import {
 } from '@/app/lib/data';
 
 export default async function Page() {
-  // Data Waterfall...
+  // Data Waterfall: each request is contingent on the data returned from the previous request
+
   const revenue = await fetchRevenue(); // wait for fetchRevenue() to complete before...
   const latestInvoices = await fetchLatestInvoices(); // ...before...
   const {
