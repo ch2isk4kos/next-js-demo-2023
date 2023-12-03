@@ -9,14 +9,15 @@ import {
 } from '@/app/lib/data';
 
 export default async function Page() {
-  const revenue = await fetchRevenue();
-  const latestInvoices = await fetchLatestInvoices();
+  // Data Waterfall...
+  const revenue = await fetchRevenue(); // wait for fetchRevenue() to complete before...
+  const latestInvoices = await fetchLatestInvoices(); // ...before...
   const {
     numberOfInvoices,
     numberOfCustomers,
     totalPaidInvoices,
     totalPendingInvoices,
-  } = await fetchCardData();
+  } = await fetchCardData(); // ...fetchCardData() can begin
 
   return (
     <main>
