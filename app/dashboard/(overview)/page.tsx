@@ -5,7 +5,7 @@ import { lusitana } from '@/app/ui/fonts';
 import {
   fetchCardData,
   // fetchRevenue,
-  fetchLatestInvoices,
+  // fetchLatestInvoices,
 } from '@/app/lib/data';
 import { Suspense } from 'react';
 import { RevenueChartSkeleton } from '@/app/ui/skeletons';
@@ -13,8 +13,8 @@ import { RevenueChartSkeleton } from '@/app/ui/skeletons';
 export default async function Page() {
   // Data Waterfall: each request is contingent on the data returned from the previous request
 
-  //const revenue = await fetchRevenue(); // wait for fetchRevenue() to complete before...
-  const latestInvoices = await fetchLatestInvoices(); // ...before...
+  // const revenue = await fetchRevenue(); // wait for fetchRevenue() to complete before...
+  // const latestInvoices = await fetchLatestInvoices(); // ...before...
   const {
     numberOfInvoices,
     numberOfCustomers,
