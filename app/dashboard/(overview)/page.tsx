@@ -4,14 +4,14 @@ import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
 import {
   fetchCardData,
-  fetchRevenue,
+  // fetchRevenue,
   fetchLatestInvoices,
 } from '@/app/lib/data';
 
 export default async function Page() {
   // Data Waterfall: each request is contingent on the data returned from the previous request
 
-  const revenue = await fetchRevenue(); // wait for fetchRevenue() to complete before...
+  //const revenue = await fetchRevenue(); // wait for fetchRevenue() to complete before...
   const latestInvoices = await fetchLatestInvoices(); // ...before...
   const {
     numberOfInvoices,
