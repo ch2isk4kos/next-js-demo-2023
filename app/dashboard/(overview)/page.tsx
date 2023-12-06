@@ -3,11 +3,11 @@ import CardWrapper from '@/app/ui/dashboard/cards';
 import RevenueChart from '@/app/ui/dashboard/revenue-chart';
 import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
-import {
-  fetchCardData,
-  // fetchRevenue,
-  // fetchLatestInvoices,
-} from '@/app/lib/data';
+// import {
+//   fetchCardData,
+//   fetchRevenue,
+//   fetchLatestInvoices,
+// } from '@/app/lib/data';
 import { Suspense } from 'react';
 import {
   CardsSkeleton,
@@ -19,12 +19,12 @@ export default async function Page() {
   // Data Waterfall: each request is contingent on the data returned from the previous request
   // const revenue = await fetchRevenue(); // wait for fetchRevenue() to complete before...
   // const latestInvoices = await fetchLatestInvoices(); // ...before...
-  const {
-    numberOfInvoices,
-    numberOfCustomers,
-    totalPaidInvoices,
-    totalPendingInvoices,
-  } = await fetchCardData(); // ...fetchCardData() can begin
+  // const {
+  //   numberOfInvoices,
+  //   numberOfCustomers,
+  //   totalPaidInvoices,
+  //   totalPendingInvoices,
+  // } = await fetchCardData(); // ...fetchCardData() can begin
 
   return (
     <main>
