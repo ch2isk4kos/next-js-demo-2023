@@ -9,8 +9,9 @@ import {
 } from '@/app/lib/data';
 import { Suspense } from 'react';
 import {
-  RevenueChartSkeleton,
+  CardSkeleton,
   LatestInvoicesSkeleton,
+  RevenueChartSkeleton,
 } from '@/app/ui/skeletons';
 
 export default async function Page() {
